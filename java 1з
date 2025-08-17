@@ -1,0 +1,27 @@
+let a = Number(prompt("Введите целое число:"));
+let b = Number(prompt("Введите целое число:"));
+if (a == Math.floor(a) && b == Math.floor(b)) {
+    function compare(a, b) {
+        if (a == b) {
+            console.log("a = b");
+        } else {
+            let ab = (a > b) ? "a > b": "a < b"
+            console.log(ab)
+        }
+    }
+    function calculator(a, b) {
+        console.log("a + b =",a + b);
+        console.log("a - b =", a - b);
+        console.log("a * b =", a * b);
+        if (a === 0 || b === 0) {
+            console.log("Делить на \"0\" нельзя");
+        } else {
+            console.log("a / b =", a / b);
+        }
+        
+    }
+    compare(a, b)
+    calculator(a, b)
+} else {
+    console.log("Число не целое");
+}
